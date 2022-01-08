@@ -40,3 +40,10 @@ thw-submission-generator config.yaml
 Produces:
 
 ![Example post](screenshot.png)
+
+### Maintenance
+
+```shell
+poetry build
+poetry publish
+```
