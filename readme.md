@@ -1,3 +1,5 @@
+`pip3 install thw-submission-generator`, then:
+
 Start with a config file:
 
 ```yaml
@@ -32,7 +34,7 @@ credits:
 And generate a hive post:
 
 ```shell
-./generate_submission_template.sh config.yaml
+thw-submission-generator config.yaml
 ```
 
 Produces:

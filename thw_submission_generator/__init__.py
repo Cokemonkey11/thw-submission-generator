@@ -123,9 +123,9 @@ def print_footer():
     write("[/TD][/TR][/TABLE]\n[/CENTER]\n")
 
 
-if __name__ == '__main__':
+def main():
     if not len(sys.argv) > 1:
-        sys.exit("Usage: ./.generate_submission_template.py config.yaml")
+        sys.exit("Usage: thw-submission-generator config.yaml")
     with open(sys.argv[1], 'r') as f:
         config = yaml.load(f.read(), Loader=yaml.Loader)
 
@@ -147,3 +147,7 @@ if __name__ == '__main__':
         print_credits(config["credits"])
         print_contributing(config["contributing"])
         print_footer()
+
+
+if __name__ == '__main__':
+    main()
